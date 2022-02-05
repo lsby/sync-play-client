@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "js-base64": "^3.7.2",
+    "minimist": "^1.2.5",
+    "node-fetch": "^2.6.7",
+    "uuid": "^8.3.2",
+    "ws": "^8.4.2"
+  }
+}

@@ -1,0 +1,1 @@
+node index.js --vlcPort 1111 --wsAddr 127.0.0.1 --wsPort 8080
