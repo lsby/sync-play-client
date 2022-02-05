@@ -20,10 +20,10 @@ main =
     liftEffect $ log "已获得ws地址"
     wsPort <- getWsPort
     liftEffect $ log "已获得ws端口"
-    vlcHand <- getVlcHand { port: vlcPort }
-    liftEffect $ log "已获得vlc句柄"
     wsHand <- getWsHard { addr: wsAddr, port: wsPort }
     liftEffect $ log "已获得ws句柄"
+    vlcHand <- getVlcHand { port: vlcPort }
+    liftEffect $ log "已获得vlc句柄"
     setOnVlcPlay vlcHand do
       t <- getVlcTime vlcHand
       liftEffect $ log $ "将跳转消息推送给服务器:" <> show t
