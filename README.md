@@ -20,9 +20,9 @@
 
 1. 在服务器上部署[sync_play_service](https://github.com/lsby/sync_play_service)
 2. 下载[发行包](https://github.com/lsby/sync_play_client/releases)
-3. 修改`run.bat`, 修改参数, 其中`vlcPort`任意, `wsAddr`是服务器的 ip, `wsPort`是服务器开启 ws 服务的端口.
+3. 修改`run.bat`里的参数, 其中`vlcPort`任意, `wsAddr`是服务器的 ip, `wsPort`是服务器开启 ws 服务的端口.
 4. 运行`run.bat`, 会弹出 VLC, 使用它播放视频即可.
 
 ### 注意事项
 
-\* 不可以放在中文路径下
+- 不可以放在中文路径下
