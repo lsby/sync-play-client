@@ -5,7 +5,7 @@ import Effect (Effect)
 import Effect.Console (log)
 import Hby.Task (Task, liftEffect, runTask_)
 import Lib.Data (VlcHand, WsCmd(..))
-import Lib.System (getVlcPort, getWsAddr, getWsPort)
+import Lib.System (getFreePort, getWsAddr, getWsPort)
 import Lib.Vlc (execVlcGoto, execVlcPlay, execVlcStop, getVlcHand, getVlcTime, setOnVlcGoto, setOnVlcPlay, setOnVlcStop)
 import Lib.Ws (getWsHard)
 import Lib.Ws.SendToWs (sendToWs)
@@ -14,8 +14,8 @@ import Lib.Ws.SetOnWsMsg (setOnWsMsg)
 main :: Effect Unit
 main =
   runTask_ do
-    vlcPort <- getVlcPort
-    liftEffect $ log "已获得vlc端口"
+    vlcPort <- getFreePort
+    liftEffect $ log $ "已获得vlc端口: " <> show vlcPort
     wsAddr <- getWsAddr
     liftEffect $ log "已获得ws地址"
     wsPort <- getWsPort
