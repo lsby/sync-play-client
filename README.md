@@ -1,4 +1,4 @@
-# sync_play_client
+# sync-play-client
 
 一个同步播放软件.
 
@@ -18,8 +18,8 @@
 
 ### 操作步骤
 
-1. 在服务器上部署[sync_play_service](https://github.com/lsby/sync_play_service)
-2. 下载[发行包](https://github.com/lsby/sync_play_client/releases)
+1. 在服务器上部署[sync-play-service](https://github.com/lsby/sync-play-service)
+2. 下载[发行包](https://github.com/lsby/sync-play-client/releases)
 3. 修改`run.bat`里的参数, `wsAddr`是服务器的 ip, `wsPort`是服务器开启 ws 服务的端口.
 4. 运行`run.bat`, 会弹出 VLC, 使用它播放视频即可, (如果报错可以多尝试几次).
 
